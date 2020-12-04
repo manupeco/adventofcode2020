@@ -59,7 +59,6 @@ def validate_all(line):
             return False
     return True
 
-
 def from_line_to_json(line):
     fields_and_values = line.split(' ')
     object = {}
@@ -81,6 +80,3 @@ valid_passports_part2 = list(map(validate_all, map_lines))
 
 print('valid_passports-part1: ', valid_passports_part1.count(True))
 print('valid_passports-part2: ', valid_passports_part2.count(True))
-
-
-
