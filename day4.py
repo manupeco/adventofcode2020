@@ -19,8 +19,7 @@ def valid_hgt_value(value):
     elif (value.endswith("cm")):
         return valid_simple_numeric_value(int(value[0:len(value)-2]), 150, 193)
 
-def valid_hcl_value(value):
-    "^#[a-f0-9]{6}"
+def valid_hcl_value(value):    
     x = re.findall("^#([a-f0-9]{6})", value)
     if x:
         return True
